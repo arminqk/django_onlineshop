@@ -1,3 +1,14 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    Sign up
+{% endblock %}
+
+{% block content %}
+<h1>Sign up</h1>
+
+
+
 <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
@@ -5,3 +16,4 @@
 
 
 </form>
+{% endblock%}
